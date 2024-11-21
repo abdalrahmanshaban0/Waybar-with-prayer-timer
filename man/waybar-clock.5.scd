@@ -51,7 +51,7 @@ $XDG_CONFIG_HOME/waybar/config ++
 |[ *rotate*
 :[ integer
 :[
-:[ Positive value to rotate the text label
+:[ Positive value to rotate the text label (in 90 degree increments)
 |[ *on-click*
 :[ string
 :[
@@ -96,6 +96,10 @@ $XDG_CONFIG_HOME/waybar/config ++
 :[ array
 :[
 :[ The actions corresponding to the buttons of the menu.
+|[ *expand*:
+:[ bool
+:[ false
+:[ Enables this module to consume all left over space dynamically.
 
 View all valid format options in *strftime(3)* or have a look https://en.cppreference.com/w/cpp/chrono/duration/formatter
 
