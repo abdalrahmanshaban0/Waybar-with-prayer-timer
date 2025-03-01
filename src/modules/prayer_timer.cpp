@@ -26,7 +26,7 @@ void waybar::modules::prayer_timer::SecondsToString(int seconds, char *buffer, i
 
 auto waybar::modules::prayer_timer::update() -> void {
     std::ifstream infile(file_path_);
-    char* arr[6] = {"Fajr ", "Sunrise ", "Dhuhr ", "Asr ", "Maghrib ", "Isha "};
+    char* arr[6] = {"الفجر ", "الشروق ", "الظهر ", "العصر ", "المغرب ", "العشاء "};
     int idx = 0, rem = 0;
     infile >> idx;
     infile >> rem;
